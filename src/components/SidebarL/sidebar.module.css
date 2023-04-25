@@ -1,0 +1,53 @@
+.sidebar{
+    height:95vh;
+    background:red;
+    --toggle-height:35px;
+}
+.toggle{
+    height:var(--toggle-height);
+    padding:3px;
+    background: rgba(0,0,0,0);
+    border-style: none;
+    font-size: large;
+    position:static; 
+    text-align: end; 
+}
+.open{
+    flex:4;
+    max-width:250px;
+    min-width:160px;
+}
+.open .toggle{
+    width:100%;
+    padding-right: 10px;
+}
+.closing{
+    flex:0;
+    width:0;
+}
+.closed > div{
+    display: none;
+}
+.closed  .toggle{
+    position:absolute;
+    transform: rotate(180deg);
+}
+.container{
+    display:grid;
+    height:calc(100% - var(--toggle-height) );
+    grid-template-rows: 5% 80% 15%;
+}
+.header{
+    background:purple;
+    text-align: center;
+}
+.explorer{
+    background:orange;
+    /* height:60%; */
+}
+.footer{
+    background:green;
+    display:grid;
+    align-content:space-around ;
+    justify-items: center;
+}
