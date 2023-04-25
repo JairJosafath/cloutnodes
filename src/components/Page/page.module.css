@@ -1,0 +1,29 @@
+.page{
+    display:flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.page h4{
+    font-weight: normal;
+}
+
+.dots{
+    opacity: 0;
+    font-size: large;
+}
+
+.page:hover .dots{
+    opacity:1
+}
+
+.subcontent {
+    background:pink;
+    margin-left: 20px;
+}
+.open{
+    transform: rotate(90deg);
+}
+.transparent{
+    opacity: 0;
+}
